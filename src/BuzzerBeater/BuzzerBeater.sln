@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB", "BB\BB.csproj", "{CD138F33-836D-417D-B892-116FF19428B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBWin", "BBWin\BBWin.csproj", "{C83900B9-0073-4C33-81AA-A1E140044109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBLogic", "BBLogic\BBLogic.csproj", "{9070FF46-7A57-4720-8517-0D828937D18F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BBWinInstaller", "BBWinInstaller\BBWinInstaller.vdproj", "{08E60113-34E3-4C3C-B887-3207C83BE855}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD138F33-836D-417D-B892-116FF19428B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD138F33-836D-417D-B892-116FF19428B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD138F33-836D-417D-B892-116FF19428B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD138F33-836D-417D-B892-116FF19428B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83900B9-0073-4C33-81AA-A1E140044109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83900B9-0073-4C33-81AA-A1E140044109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83900B9-0073-4C33-81AA-A1E140044109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83900B9-0073-4C33-81AA-A1E140044109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9070FF46-7A57-4720-8517-0D828937D18F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9070FF46-7A57-4720-8517-0D828937D18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9070FF46-7A57-4720-8517-0D828937D18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9070FF46-7A57-4720-8517-0D828937D18F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E60113-34E3-4C3C-B887-3207C83BE855}.Debug|Any CPU.ActiveCfg = Debug
+		{08E60113-34E3-4C3C-B887-3207C83BE855}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
