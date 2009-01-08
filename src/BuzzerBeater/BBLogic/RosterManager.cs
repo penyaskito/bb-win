@@ -12,10 +12,24 @@ namespace BBLogic
     {
         public API API { get; set; }
 
-
         public API.Roster GetCurrentData()
         {
-            API.Roster roster = API.GetRoster(null);
+            API.Roster roster = null;
+            try
+            {
+                roster = API.GetRoster(null);
+            }
+            catch (BB.NotAuthorizedException naexc)
+            {
+                if (API.Login())
+                {
+                    roster = API.GetRoster(null);
+                }
+                else
+                {
+                    throw naexc;
+                }
+            }
 
             if (IsNewer(roster))
             {
