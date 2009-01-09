@@ -10,25 +10,9 @@ using System.IO;
 
 namespace BBWin.UI
 {
-    public enum DiffImage
-    {
-        More,
-        Equal,
-        Less
-    }
-
 
     public class DiffColumn : DataGridViewColumn
     {
-        private DiffImage m_DefaultStatus = DiffImage.Equal;
-
-        public DiffImage DefaultStatus
-        {
-            get { return m_DefaultStatus; }
-            set { m_DefaultStatus = value; }
-        }
-
-
         public DiffColumn()
             : base(new DiffCell())
         {

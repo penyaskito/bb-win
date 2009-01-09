@@ -554,7 +554,6 @@
             // GameShapeDiffColumn
             // 
             this.GameShapeDiffColumn.DataPropertyName = "Diff.GameShape";
-            this.GameShapeDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
             this.GameShapeDiffColumn.HeaderText = "";
             this.GameShapeDiffColumn.Name = "GameShapeDiffColumn";
             this.GameShapeDiffColumn.ReadOnly = true;
@@ -572,7 +571,6 @@
             // PotentialDiffColumn
             // 
             this.PotentialDiffColumn.DataPropertyName = "Diff.Potential";
-            this.PotentialDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
             this.PotentialDiffColumn.HeaderText = "";
             this.PotentialDiffColumn.Name = "PotentialDiffColumn";
             this.PotentialDiffColumn.ReadOnly = true;
@@ -590,7 +588,7 @@
             // JumpShotDiffColumn
             // 
             this.JumpShotDiffColumn.DataPropertyName = "Diff.JumpShot";
-            this.JumpShotDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+
             this.JumpShotDiffColumn.HeaderText = "";
             this.JumpShotDiffColumn.Name = "JumpShotDiffColumn";
             this.JumpShotDiffColumn.ReadOnly = true;
@@ -608,7 +606,7 @@
             // RangeDiffColumn
             // 
             this.RangeDiffColumn.DataPropertyName = "Diff.Range";
-            this.RangeDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.RangeDiffColumn.HeaderText = "";
             this.RangeDiffColumn.Name = "RangeDiffColumn";
             this.RangeDiffColumn.ReadOnly = true;
@@ -626,7 +624,7 @@
             // OutsideDefenseDiffColumn
             // 
             this.OutsideDefenseDiffColumn.DataPropertyName = "Diff.OutsideDefense";
-            this.OutsideDefenseDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.OutsideDefenseDiffColumn.HeaderText = "";
             this.OutsideDefenseDiffColumn.Name = "OutsideDefenseDiffColumn";
             this.OutsideDefenseDiffColumn.ReadOnly = true;
@@ -644,7 +642,7 @@
             // HandlingDiffColumn
             // 
             this.HandlingDiffColumn.DataPropertyName = "Diff.Handling";
-            this.HandlingDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.HandlingDiffColumn.HeaderText = "";
             this.HandlingDiffColumn.Name = "HandlingDiffColumn";
             this.HandlingDiffColumn.ReadOnly = true;
@@ -662,7 +660,7 @@
             // DrivingDiffColumn
             // 
             this.DrivingDiffColumn.DataPropertyName = "Diff.Driving";
-            this.DrivingDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.DrivingDiffColumn.HeaderText = "DrivingDiff";
             this.DrivingDiffColumn.Name = "DrivingDiffColumn";
             this.DrivingDiffColumn.ReadOnly = true;
@@ -680,7 +678,7 @@
             // PassingDiffColumn
             // 
             this.PassingDiffColumn.DataPropertyName = "Diff.Passing";
-            this.PassingDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.PassingDiffColumn.HeaderText = "";
             this.PassingDiffColumn.Name = "PassingDiffColumn";
             this.PassingDiffColumn.ReadOnly = true;
@@ -698,7 +696,7 @@
             // InsideShotDiffColumn
             // 
             this.InsideShotDiffColumn.DataPropertyName = "Diff.InsideShot";
-            this.InsideShotDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.InsideShotDiffColumn.HeaderText = "";
             this.InsideShotDiffColumn.Name = "InsideShotDiffColumn";
             this.InsideShotDiffColumn.ReadOnly = true;
@@ -716,7 +714,7 @@
             // InsideDefenseDiffColumn
             // 
             this.InsideDefenseDiffColumn.DataPropertyName = "Diff.InsideDefense";
-            this.InsideDefenseDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.InsideDefenseDiffColumn.HeaderText = "";
             this.InsideDefenseDiffColumn.Name = "InsideDefenseDiffColumn";
             this.InsideDefenseDiffColumn.ReadOnly = true;
@@ -734,7 +732,7 @@
             // ReboundDiffColumn
             // 
             this.ReboundDiffColumn.DataPropertyName = "Diff.Rebound";
-            this.ReboundDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.ReboundDiffColumn.HeaderText = "";
             this.ReboundDiffColumn.Name = "ReboundDiffColumn";
             this.ReboundDiffColumn.ReadOnly = true;
@@ -752,7 +750,7 @@
             // BlockDiffColumn
             // 
             this.BlockDiffColumn.DataPropertyName = "Diff.Block";
-            this.BlockDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.BlockDiffColumn.HeaderText = "";
             this.BlockDiffColumn.Name = "BlockDiffColumn";
             this.BlockDiffColumn.ReadOnly = true;
@@ -770,7 +768,7 @@
             // StaminaDiffColumn
             // 
             this.StaminaDiffColumn.DataPropertyName = "Diff.Stamina";
-            this.StaminaDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.StaminaDiffColumn.HeaderText = "";
             this.StaminaDiffColumn.Name = "StaminaDiffColumn";
             this.StaminaDiffColumn.ReadOnly = true;
@@ -788,7 +786,7 @@
             // FreeThrowDiffColumn
             // 
             this.FreeThrowDiffColumn.DataPropertyName = "Diff.FreeThrow";
-            this.FreeThrowDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.FreeThrowDiffColumn.HeaderText = "";
             this.FreeThrowDiffColumn.Name = "FreeThrowDiffColumn";
             this.FreeThrowDiffColumn.ReadOnly = true;
@@ -806,7 +804,7 @@
             // ExperienceDiffColumn
             // 
             this.ExperienceDiffColumn.DataPropertyName = "Diff.Experience";
-            this.ExperienceDiffColumn.DefaultStatus = BBWin.UI.DiffImage.Equal;
+            
             this.ExperienceDiffColumn.HeaderText = "";
             this.ExperienceDiffColumn.Name = "ExperienceDiffColumn";
             this.ExperienceDiffColumn.ReadOnly = true;
