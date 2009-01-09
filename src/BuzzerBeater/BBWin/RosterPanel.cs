@@ -15,6 +15,8 @@ namespace BBWin
     {
         private RosterManager rosterManager = null;
 
+        public RosterManager.RosterDiff Roster { get; set; }
+
         public RosterPanel()
         {
             InitializeComponent();
@@ -23,13 +25,14 @@ namespace BBWin
 
         public void Init()
         {
-            RosterManager.RosterDiff r = rosterManager.GetCurrentDataWithDiff();
-            ShowData(r);
+            Roster = rosterManager.GetCurrentDataWithDiff();
+            ShowData(Roster);
         }
 
         private void ShowData(RosterManager.RosterDiff r)
         {
             dgvPlayers.DataSource = r.Players;
+
         }
 
         private BB.API _api;
@@ -50,11 +53,20 @@ namespace BBWin
                           );
             }
         }
-
         private string BindProperty(object property, string propertyName)
         {
             string retValue = string.Empty;
+            object o = GetProperty(property, propertyName);
+            if (o != null)
+            {
+                retValue = o.ToString();
+            }
+            return retValue;
+        }
 
+        private object GetProperty(object property, string propertyName)
+        {
+            object o = null;
             if (propertyName.Contains("."))
             {
                 PropertyInfo[] arrayProperties;
@@ -67,7 +79,7 @@ namespace BBWin
                 {
                     if (propertyInfo.Name == leftPropertyName)
                     {
-                        retValue = BindProperty(
+                        o = GetProperty(
                           propertyInfo.GetValue(property, null),
                           propertyName.Substring(propertyName.IndexOf(".") + 1));
                         break;
@@ -81,13 +93,43 @@ namespace BBWin
 
                 propertyType = property.GetType();
                 propertyInfo = propertyType.GetProperty(propertyName);
-                retValue = propertyInfo.GetValue(property, null).ToString();
+                o = propertyInfo.GetValue(property, null);
             }
-
-            return retValue;
+            return o;
         }
 
+        private void dgvPlayers_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            SortOrder order = dgvPlayers.Columns[e.ColumnIndex].HeaderCell.SortGlyphDirection;
+            int orderFactor = (order == SortOrder.Ascending) ? -1 : 1;
 
+            dgvPlayers.Columns[e.ColumnIndex].HeaderCell.SortGlyphDirection =
+                (orderFactor == 1) ? SortOrder.Ascending : SortOrder.Descending;
 
+            Roster.Players.Sort(delegate(RosterManager.PlayerDiff x, RosterManager.PlayerDiff y)
+            {
+                string propertyName = dgvPlayers.Columns[e.ColumnIndex].DataPropertyName;
+                object valueOfX = GetProperty(x, propertyName);
+                object valueOfY = GetProperty(y, propertyName);
+
+                if (valueOfX == null && valueOfY == null)
+                {
+                    return 0 * orderFactor;
+                }
+                if (valueOfX == null && valueOfY != null)
+                {
+                    return 1 * orderFactor;
+                }
+                if (valueOfX != null && valueOfY == null)
+                {
+                    return -1 * orderFactor;
+                }
+                int result = orderFactor * ((IComparable)valueOfX).CompareTo(valueOfY);
+                return result;
+            });
+
+            ShowData(Roster);
+            dgvPlayers.Invalidate();
+        }
     }
 }

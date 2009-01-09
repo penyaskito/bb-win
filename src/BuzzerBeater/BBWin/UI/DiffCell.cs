@@ -16,7 +16,7 @@ namespace BBWin.UI
         public DiffColumn()
             : base(new DiffCell())
         {
-            Width = 30;
+            Width = 35;
         }
     }
 

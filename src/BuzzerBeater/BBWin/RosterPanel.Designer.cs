@@ -43,35 +43,35 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn1 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn2 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn3 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn4 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn5 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn6 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn7 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn8 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn9 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn10 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn11 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn12 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn13 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn14 = new BBWin.UI.DiffColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diffColumn15 = new BBWin.UI.DiffColumn();
             this.JerseyColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BestPositionColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -110,6 +110,21 @@
             this.FreeThrowDiffColumn = new BBWin.UI.DiffColumn();
             this.ExperienceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExperienceDiffColumn = new BBWin.UI.DiffColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlayers)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -190,6 +205,7 @@
             this.dgvPlayers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPlayers.Size = new System.Drawing.Size(682, 355);
             this.dgvPlayers.TabIndex = 1;
+            this.dgvPlayers.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPlayers_ColumnHeaderMouseClick);
             this.dgvPlayers.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvPlayers_CellFormatting);
             // 
             // tableLayoutPanel1
@@ -241,6 +257,7 @@
             this.dataGridViewTextBoxColumn3.Frozen = true;
             this.dataGridViewTextBoxColumn3.HeaderText = "Name";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 73;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -248,6 +265,7 @@
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Nationality";
             this.dataGridViewTextBoxColumn4.HeaderText = "Nationality";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 5;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -255,6 +273,7 @@
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Age";
             this.dataGridViewTextBoxColumn5.HeaderText = "Age";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 60;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -262,6 +281,7 @@
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Height";
             this.dataGridViewTextBoxColumn6.HeaderText = "Height";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 78;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -284,11 +304,30 @@
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 50;
             // 
+            // diffColumn1
+            // 
+            this.diffColumn1.DataPropertyName = "Diff.GameShape";
+            this.diffColumn1.HeaderText = "";
+            this.diffColumn1.Name = "diffColumn1";
+            this.diffColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn1.Width = 35;
+            // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "Diff.GameShape";
             this.dataGridViewTextBoxColumn10.HeaderText = "GameShapeDiff";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 50;
+            // 
+            // diffColumn2
+            // 
+            this.diffColumn2.DataPropertyName = "Diff.Potential";
+            this.diffColumn2.HeaderText = "";
+            this.diffColumn2.Name = "diffColumn2";
+            this.diffColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn2.Width = 35;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -297,11 +336,30 @@
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.Width = 50;
             // 
+            // diffColumn3
+            // 
+            this.diffColumn3.DataPropertyName = "Diff.JumpShot";
+            this.diffColumn3.HeaderText = "";
+            this.diffColumn3.Name = "diffColumn3";
+            this.diffColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn3.Width = 35;
+            // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.DataPropertyName = "Diff.Potential";
             this.dataGridViewTextBoxColumn12.HeaderText = "PotentialDiff";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 50;
+            // 
+            // diffColumn4
+            // 
+            this.diffColumn4.DataPropertyName = "Diff.Range";
+            this.diffColumn4.HeaderText = "";
+            this.diffColumn4.Name = "diffColumn4";
+            this.diffColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn4.Width = 35;
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -310,11 +368,30 @@
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.Width = 50;
             // 
+            // diffColumn5
+            // 
+            this.diffColumn5.DataPropertyName = "Diff.OutsideDefense";
+            this.diffColumn5.HeaderText = "";
+            this.diffColumn5.Name = "diffColumn5";
+            this.diffColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn5.Width = 35;
+            // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.DataPropertyName = "Diff.JumpShot";
             this.dataGridViewTextBoxColumn14.HeaderText = "JumpShotDiff";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 50;
+            // 
+            // diffColumn6
+            // 
+            this.diffColumn6.DataPropertyName = "Diff.Handling";
+            this.diffColumn6.HeaderText = "";
+            this.diffColumn6.Name = "diffColumn6";
+            this.diffColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn6.Width = 35;
             // 
             // dataGridViewTextBoxColumn15
             // 
@@ -323,11 +400,30 @@
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             this.dataGridViewTextBoxColumn15.Width = 50;
             // 
+            // diffColumn7
+            // 
+            this.diffColumn7.DataPropertyName = "Diff.Driving";
+            this.diffColumn7.HeaderText = "DrivingDiff";
+            this.diffColumn7.Name = "diffColumn7";
+            this.diffColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn7.Width = 35;
+            // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.DataPropertyName = "Diff.Range";
             this.dataGridViewTextBoxColumn16.HeaderText = "RangeDiff";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 50;
+            // 
+            // diffColumn8
+            // 
+            this.diffColumn8.DataPropertyName = "Diff.Passing";
+            this.diffColumn8.HeaderText = "";
+            this.diffColumn8.Name = "diffColumn8";
+            this.diffColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn8.Width = 35;
             // 
             // dataGridViewTextBoxColumn17
             // 
@@ -336,11 +432,30 @@
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.Width = 50;
             // 
+            // diffColumn9
+            // 
+            this.diffColumn9.DataPropertyName = "Diff.InsideShot";
+            this.diffColumn9.HeaderText = "";
+            this.diffColumn9.Name = "diffColumn9";
+            this.diffColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn9.Width = 35;
+            // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.DataPropertyName = "Diff.OutsideDefense";
             this.dataGridViewTextBoxColumn18.HeaderText = "OutsideDefenseDiff";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Width = 50;
+            // 
+            // diffColumn10
+            // 
+            this.diffColumn10.DataPropertyName = "Diff.InsideDefense";
+            this.diffColumn10.HeaderText = "";
+            this.diffColumn10.Name = "diffColumn10";
+            this.diffColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn10.Width = 35;
             // 
             // dataGridViewTextBoxColumn19
             // 
@@ -349,11 +464,30 @@
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             this.dataGridViewTextBoxColumn19.Width = 50;
             // 
+            // diffColumn11
+            // 
+            this.diffColumn11.DataPropertyName = "Diff.Rebound";
+            this.diffColumn11.HeaderText = "";
+            this.diffColumn11.Name = "diffColumn11";
+            this.diffColumn11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn11.Width = 35;
+            // 
             // dataGridViewTextBoxColumn20
             // 
             this.dataGridViewTextBoxColumn20.DataPropertyName = "Diff.Handling";
             this.dataGridViewTextBoxColumn20.HeaderText = "HandlingDiff";
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.Width = 50;
+            // 
+            // diffColumn12
+            // 
+            this.diffColumn12.DataPropertyName = "Diff.Block";
+            this.diffColumn12.HeaderText = "";
+            this.diffColumn12.Name = "diffColumn12";
+            this.diffColumn12.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn12.Width = 35;
             // 
             // dataGridViewTextBoxColumn21
             // 
@@ -362,11 +496,30 @@
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             this.dataGridViewTextBoxColumn21.Width = 50;
             // 
+            // diffColumn13
+            // 
+            this.diffColumn13.DataPropertyName = "Diff.Stamina";
+            this.diffColumn13.HeaderText = "";
+            this.diffColumn13.Name = "diffColumn13";
+            this.diffColumn13.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn13.Width = 35;
+            // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.DataPropertyName = "Diff.Driving";
             this.dataGridViewTextBoxColumn22.HeaderText = "DrivingDiff";
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.Width = 50;
+            // 
+            // diffColumn14
+            // 
+            this.diffColumn14.DataPropertyName = "Diff.FreeThrow";
+            this.diffColumn14.HeaderText = "";
+            this.diffColumn14.Name = "diffColumn14";
+            this.diffColumn14.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn14.Width = 35;
             // 
             // dataGridViewTextBoxColumn23
             // 
@@ -374,6 +527,356 @@
             this.dataGridViewTextBoxColumn23.HeaderText = "Passing";
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             this.dataGridViewTextBoxColumn23.Width = 50;
+            // 
+            // diffColumn15
+            // 
+            this.diffColumn15.DataPropertyName = "Diff.Experience";
+            this.diffColumn15.HeaderText = "";
+            this.diffColumn15.Name = "diffColumn15";
+            this.diffColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.diffColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.diffColumn15.Width = 35;
+            // 
+            // JerseyColumn
+            // 
+            this.JerseyColumn.DataPropertyName = "Jersey";
+            this.JerseyColumn.Frozen = true;
+            this.JerseyColumn.HeaderText = "Jersey";
+            this.JerseyColumn.Name = "JerseyColumn";
+            this.JerseyColumn.ReadOnly = true;
+            this.JerseyColumn.Width = 50;
+            // 
+            // BestPositionColumn
+            // 
+            this.BestPositionColumn.DataPropertyName = "BestPosition";
+            this.BestPositionColumn.Frozen = true;
+            this.BestPositionColumn.HeaderText = "BestPosition";
+            this.BestPositionColumn.Name = "BestPositionColumn";
+            this.BestPositionColumn.ReadOnly = true;
+            this.BestPositionColumn.Width = 75;
+            // 
+            // NameColumn
+            // 
+            this.NameColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.NameColumn.DataPropertyName = "Name";
+            this.NameColumn.Frozen = true;
+            this.NameColumn.HeaderText = "Name";
+            this.NameColumn.Name = "NameColumn";
+            this.NameColumn.ReadOnly = true;
+            this.NameColumn.Width = 73;
+            // 
+            // NationalityColumn
+            // 
+            this.NationalityColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            this.NationalityColumn.DataPropertyName = "Nationality";
+            this.NationalityColumn.HeaderText = "Nationality";
+            this.NationalityColumn.Name = "NationalityColumn";
+            this.NationalityColumn.ReadOnly = true;
+            this.NationalityColumn.Width = 5;
+            // 
+            // AgeColumn
+            // 
+            this.AgeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.AgeColumn.DataPropertyName = "Age";
+            this.AgeColumn.HeaderText = "Age";
+            this.AgeColumn.Name = "AgeColumn";
+            this.AgeColumn.ReadOnly = true;
+            this.AgeColumn.Width = 60;
+            // 
+            // HeightColumn
+            // 
+            this.HeightColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.HeightColumn.DataPropertyName = "Height";
+            this.HeightColumn.HeaderText = "Height";
+            this.HeightColumn.Name = "HeightColumn";
+            this.HeightColumn.ReadOnly = true;
+            this.HeightColumn.Width = 78;
+            // 
+            // DMIColumn
+            // 
+            this.DMIColumn.DataPropertyName = "DMI";
+            this.DMIColumn.HeaderText = "DMI";
+            this.DMIColumn.Name = "DMIColumn";
+            this.DMIColumn.ReadOnly = true;
+            this.DMIColumn.Width = 50;
+            // 
+            // SalaryColumn
+            // 
+            this.SalaryColumn.DataPropertyName = "Salary";
+            this.SalaryColumn.HeaderText = "Salary";
+            this.SalaryColumn.Name = "SalaryColumn";
+            this.SalaryColumn.ReadOnly = true;
+            this.SalaryColumn.Width = 50;
+            // 
+            // GameShapeColumn
+            // 
+            this.GameShapeColumn.DataPropertyName = "Skills.GameShape";
+            this.GameShapeColumn.HeaderText = "GameShape";
+            this.GameShapeColumn.Name = "GameShapeColumn";
+            this.GameShapeColumn.ReadOnly = true;
+            this.GameShapeColumn.Width = 50;
+            // 
+            // GameShapeDiffColumn
+            // 
+            this.GameShapeDiffColumn.DataPropertyName = "Diff.GameShape";
+            this.GameShapeDiffColumn.HeaderText = "";
+            this.GameShapeDiffColumn.Name = "GameShapeDiffColumn";
+            this.GameShapeDiffColumn.ReadOnly = true;
+            this.GameShapeDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GameShapeDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.GameShapeDiffColumn.Width = 35;
+            // 
+            // PotentialColumn
+            // 
+            this.PotentialColumn.DataPropertyName = "Skills.Potential";
+            this.PotentialColumn.HeaderText = "Potential";
+            this.PotentialColumn.Name = "PotentialColumn";
+            this.PotentialColumn.ReadOnly = true;
+            this.PotentialColumn.Width = 50;
+            // 
+            // PotentialDiffColumn
+            // 
+            this.PotentialDiffColumn.DataPropertyName = "Diff.Potential";
+            this.PotentialDiffColumn.HeaderText = "";
+            this.PotentialDiffColumn.Name = "PotentialDiffColumn";
+            this.PotentialDiffColumn.ReadOnly = true;
+            this.PotentialDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PotentialDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.PotentialDiffColumn.Width = 35;
+            // 
+            // JumpShotColumn
+            // 
+            this.JumpShotColumn.DataPropertyName = "Skills.JumpShot";
+            this.JumpShotColumn.HeaderText = "JumpShot";
+            this.JumpShotColumn.Name = "JumpShotColumn";
+            this.JumpShotColumn.ReadOnly = true;
+            this.JumpShotColumn.Width = 50;
+            // 
+            // JumpShotDiffColumn
+            // 
+            this.JumpShotDiffColumn.DataPropertyName = "Diff.JumpShot";
+            this.JumpShotDiffColumn.HeaderText = "";
+            this.JumpShotDiffColumn.Name = "JumpShotDiffColumn";
+            this.JumpShotDiffColumn.ReadOnly = true;
+            this.JumpShotDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.JumpShotDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.JumpShotDiffColumn.Width = 35;
+            // 
+            // RangeColumn
+            // 
+            this.RangeColumn.DataPropertyName = "Skills.Range";
+            this.RangeColumn.HeaderText = "Range";
+            this.RangeColumn.Name = "RangeColumn";
+            this.RangeColumn.ReadOnly = true;
+            this.RangeColumn.Width = 50;
+            // 
+            // RangeDiffColumn
+            // 
+            this.RangeDiffColumn.DataPropertyName = "Diff.Range";
+            this.RangeDiffColumn.HeaderText = "";
+            this.RangeDiffColumn.Name = "RangeDiffColumn";
+            this.RangeDiffColumn.ReadOnly = true;
+            this.RangeDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.RangeDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.RangeDiffColumn.Width = 35;
+            // 
+            // OutsideDefenseColumn
+            // 
+            this.OutsideDefenseColumn.DataPropertyName = "Skills.OutsideDefense";
+            this.OutsideDefenseColumn.HeaderText = "OutsideDefense";
+            this.OutsideDefenseColumn.Name = "OutsideDefenseColumn";
+            this.OutsideDefenseColumn.ReadOnly = true;
+            this.OutsideDefenseColumn.Width = 50;
+            // 
+            // OutsideDefenseDiffColumn
+            // 
+            this.OutsideDefenseDiffColumn.DataPropertyName = "Diff.OutsideDefense";
+            this.OutsideDefenseDiffColumn.HeaderText = "";
+            this.OutsideDefenseDiffColumn.Name = "OutsideDefenseDiffColumn";
+            this.OutsideDefenseDiffColumn.ReadOnly = true;
+            this.OutsideDefenseDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OutsideDefenseDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.OutsideDefenseDiffColumn.Width = 35;
+            // 
+            // HandlingColumn
+            // 
+            this.HandlingColumn.DataPropertyName = "Skills.Handling";
+            this.HandlingColumn.HeaderText = "Handling";
+            this.HandlingColumn.Name = "HandlingColumn";
+            this.HandlingColumn.ReadOnly = true;
+            this.HandlingColumn.Width = 50;
+            // 
+            // HandlingDiffColumn
+            // 
+            this.HandlingDiffColumn.DataPropertyName = "Diff.Handling";
+            this.HandlingDiffColumn.HeaderText = "";
+            this.HandlingDiffColumn.Name = "HandlingDiffColumn";
+            this.HandlingDiffColumn.ReadOnly = true;
+            this.HandlingDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.HandlingDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.HandlingDiffColumn.Width = 35;
+            // 
+            // DrivingColumn
+            // 
+            this.DrivingColumn.DataPropertyName = "Skills.Driving";
+            this.DrivingColumn.HeaderText = "Driving";
+            this.DrivingColumn.Name = "DrivingColumn";
+            this.DrivingColumn.ReadOnly = true;
+            this.DrivingColumn.Width = 50;
+            // 
+            // DrivingDiffColumn
+            // 
+            this.DrivingDiffColumn.DataPropertyName = "Diff.Driving";
+            this.DrivingDiffColumn.HeaderText = "DrivingDiff";
+            this.DrivingDiffColumn.Name = "DrivingDiffColumn";
+            this.DrivingDiffColumn.ReadOnly = true;
+            this.DrivingDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.DrivingDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.DrivingDiffColumn.Width = 35;
+            // 
+            // PassingColumn
+            // 
+            this.PassingColumn.DataPropertyName = "Skills.Passing";
+            this.PassingColumn.HeaderText = "Passing";
+            this.PassingColumn.Name = "PassingColumn";
+            this.PassingColumn.ReadOnly = true;
+            this.PassingColumn.Width = 50;
+            // 
+            // PassingDiffColumn
+            // 
+            this.PassingDiffColumn.DataPropertyName = "Diff.Passing";
+            this.PassingDiffColumn.HeaderText = "";
+            this.PassingDiffColumn.Name = "PassingDiffColumn";
+            this.PassingDiffColumn.ReadOnly = true;
+            this.PassingDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PassingDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.PassingDiffColumn.Width = 35;
+            // 
+            // InsideShotColumn
+            // 
+            this.InsideShotColumn.DataPropertyName = "Skills.InsideShot";
+            this.InsideShotColumn.HeaderText = "InsideShot";
+            this.InsideShotColumn.Name = "InsideShotColumn";
+            this.InsideShotColumn.ReadOnly = true;
+            this.InsideShotColumn.Width = 50;
+            // 
+            // InsideShotDiffColumn
+            // 
+            this.InsideShotDiffColumn.DataPropertyName = "Diff.InsideShot";
+            this.InsideShotDiffColumn.HeaderText = "";
+            this.InsideShotDiffColumn.Name = "InsideShotDiffColumn";
+            this.InsideShotDiffColumn.ReadOnly = true;
+            this.InsideShotDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.InsideShotDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.InsideShotDiffColumn.Width = 35;
+            // 
+            // InsideDefenseColumn
+            // 
+            this.InsideDefenseColumn.DataPropertyName = "Skills.InsideDefense";
+            this.InsideDefenseColumn.HeaderText = "InsideDefense";
+            this.InsideDefenseColumn.Name = "InsideDefenseColumn";
+            this.InsideDefenseColumn.ReadOnly = true;
+            this.InsideDefenseColumn.Width = 50;
+            // 
+            // InsideDefenseDiffColumn
+            // 
+            this.InsideDefenseDiffColumn.DataPropertyName = "Diff.InsideDefense";
+            this.InsideDefenseDiffColumn.HeaderText = "";
+            this.InsideDefenseDiffColumn.Name = "InsideDefenseDiffColumn";
+            this.InsideDefenseDiffColumn.ReadOnly = true;
+            this.InsideDefenseDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.InsideDefenseDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.InsideDefenseDiffColumn.Width = 35;
+            // 
+            // ReboundColumn
+            // 
+            this.ReboundColumn.DataPropertyName = "Skills.Rebound";
+            this.ReboundColumn.HeaderText = "Rebound";
+            this.ReboundColumn.Name = "ReboundColumn";
+            this.ReboundColumn.ReadOnly = true;
+            this.ReboundColumn.Width = 50;
+            // 
+            // ReboundDiffColumn
+            // 
+            this.ReboundDiffColumn.DataPropertyName = "Diff.Rebound";
+            this.ReboundDiffColumn.HeaderText = "";
+            this.ReboundDiffColumn.Name = "ReboundDiffColumn";
+            this.ReboundDiffColumn.ReadOnly = true;
+            this.ReboundDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReboundDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ReboundDiffColumn.Width = 35;
+            // 
+            // BlockColumn
+            // 
+            this.BlockColumn.DataPropertyName = "Skills.Block";
+            this.BlockColumn.HeaderText = "Block";
+            this.BlockColumn.Name = "BlockColumn";
+            this.BlockColumn.ReadOnly = true;
+            this.BlockColumn.Width = 50;
+            // 
+            // BlockDiffColumn
+            // 
+            this.BlockDiffColumn.DataPropertyName = "Diff.Block";
+            this.BlockDiffColumn.HeaderText = "";
+            this.BlockDiffColumn.Name = "BlockDiffColumn";
+            this.BlockDiffColumn.ReadOnly = true;
+            this.BlockDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.BlockDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.BlockDiffColumn.Width = 35;
+            // 
+            // StaminaColumn
+            // 
+            this.StaminaColumn.DataPropertyName = "Skills.Stamina";
+            this.StaminaColumn.HeaderText = "Stamina";
+            this.StaminaColumn.Name = "StaminaColumn";
+            this.StaminaColumn.ReadOnly = true;
+            this.StaminaColumn.Width = 50;
+            // 
+            // StaminaDiffColumn
+            // 
+            this.StaminaDiffColumn.DataPropertyName = "Diff.Stamina";
+            this.StaminaDiffColumn.HeaderText = "";
+            this.StaminaDiffColumn.Name = "StaminaDiffColumn";
+            this.StaminaDiffColumn.ReadOnly = true;
+            this.StaminaDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.StaminaDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.StaminaDiffColumn.Width = 35;
+            // 
+            // FreeThrowColumn
+            // 
+            this.FreeThrowColumn.DataPropertyName = "Skills.FreeThrow";
+            this.FreeThrowColumn.HeaderText = "FreeThrow";
+            this.FreeThrowColumn.Name = "FreeThrowColumn";
+            this.FreeThrowColumn.ReadOnly = true;
+            this.FreeThrowColumn.Width = 50;
+            // 
+            // FreeThrowDiffColumn
+            // 
+            this.FreeThrowDiffColumn.DataPropertyName = "Diff.FreeThrow";
+            this.FreeThrowDiffColumn.HeaderText = "";
+            this.FreeThrowDiffColumn.Name = "FreeThrowDiffColumn";
+            this.FreeThrowDiffColumn.ReadOnly = true;
+            this.FreeThrowDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FreeThrowDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.FreeThrowDiffColumn.Width = 35;
+            // 
+            // ExperienceColumn
+            // 
+            this.ExperienceColumn.DataPropertyName = "Skills.Experience";
+            this.ExperienceColumn.HeaderText = "Experience";
+            this.ExperienceColumn.Name = "ExperienceColumn";
+            this.ExperienceColumn.ReadOnly = true;
+            this.ExperienceColumn.Width = 50;
+            // 
+            // ExperienceDiffColumn
+            // 
+            this.ExperienceDiffColumn.DataPropertyName = "Diff.Experience";
+            this.ExperienceDiffColumn.HeaderText = "";
+            this.ExperienceDiffColumn.Name = "ExperienceDiffColumn";
+            this.ExperienceDiffColumn.ReadOnly = true;
+            this.ExperienceDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExperienceDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ExperienceDiffColumn.Width = 35;
             // 
             // dataGridViewTextBoxColumn24
             // 
@@ -472,345 +975,6 @@
             this.dataGridViewTextBoxColumn38.HeaderText = "ExperienceDiff";
             this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
             // 
-            // JerseyColumn
-            // 
-            this.JerseyColumn.DataPropertyName = "Jersey";
-            this.JerseyColumn.Frozen = true;
-            this.JerseyColumn.HeaderText = "Jersey";
-            this.JerseyColumn.Name = "JerseyColumn";
-            this.JerseyColumn.ReadOnly = true;
-            this.JerseyColumn.Width = 50;
-            // 
-            // BestPositionColumn
-            // 
-            this.BestPositionColumn.DataPropertyName = "BestPosition";
-            this.BestPositionColumn.Frozen = true;
-            this.BestPositionColumn.HeaderText = "BestPosition";
-            this.BestPositionColumn.Name = "BestPositionColumn";
-            this.BestPositionColumn.ReadOnly = true;
-            this.BestPositionColumn.Width = 75;
-            // 
-            // NameColumn
-            // 
-            this.NameColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.NameColumn.DataPropertyName = "Name";
-            this.NameColumn.Frozen = true;
-            this.NameColumn.HeaderText = "Name";
-            this.NameColumn.Name = "NameColumn";
-            this.NameColumn.ReadOnly = true;
-            this.NameColumn.Width = 73;
-            // 
-            // NationalityColumn
-            // 
-            this.NationalityColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            this.NationalityColumn.DataPropertyName = "Nationality";
-            this.NationalityColumn.HeaderText = "Nationality";
-            this.NationalityColumn.Name = "NationalityColumn";
-            this.NationalityColumn.ReadOnly = true;
-            this.NationalityColumn.Width = 5;
-            // 
-            // AgeColumn
-            // 
-            this.AgeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.AgeColumn.DataPropertyName = "Age";
-            this.AgeColumn.HeaderText = "Age";
-            this.AgeColumn.Name = "AgeColumn";
-            this.AgeColumn.ReadOnly = true;
-            this.AgeColumn.Width = 60;
-            // 
-            // HeightColumn
-            // 
-            this.HeightColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.HeightColumn.DataPropertyName = "Height";
-            this.HeightColumn.HeaderText = "Height";
-            this.HeightColumn.Name = "HeightColumn";
-            this.HeightColumn.ReadOnly = true;
-            this.HeightColumn.Width = 78;
-            // 
-            // DMIColumn
-            // 
-            this.DMIColumn.DataPropertyName = "DMI";
-            this.DMIColumn.HeaderText = "DMI";
-            this.DMIColumn.Name = "DMIColumn";
-            this.DMIColumn.ReadOnly = true;
-            this.DMIColumn.Width = 50;
-            // 
-            // SalaryColumn
-            // 
-            this.SalaryColumn.DataPropertyName = "Salary";
-            this.SalaryColumn.HeaderText = "Salary";
-            this.SalaryColumn.Name = "SalaryColumn";
-            this.SalaryColumn.ReadOnly = true;
-            this.SalaryColumn.Width = 50;
-            // 
-            // GameShapeColumn
-            // 
-            this.GameShapeColumn.DataPropertyName = "Skills.GameShape";
-            this.GameShapeColumn.HeaderText = "GameShape";
-            this.GameShapeColumn.Name = "GameShapeColumn";
-            this.GameShapeColumn.ReadOnly = true;
-            this.GameShapeColumn.Width = 50;
-            // 
-            // GameShapeDiffColumn
-            // 
-            this.GameShapeDiffColumn.DataPropertyName = "Diff.GameShape";
-            this.GameShapeDiffColumn.HeaderText = "";
-            this.GameShapeDiffColumn.Name = "GameShapeDiffColumn";
-            this.GameShapeDiffColumn.ReadOnly = true;
-            this.GameShapeDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.GameShapeDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // PotentialColumn
-            // 
-            this.PotentialColumn.DataPropertyName = "Skills.Potential";
-            this.PotentialColumn.HeaderText = "Potential";
-            this.PotentialColumn.Name = "PotentialColumn";
-            this.PotentialColumn.ReadOnly = true;
-            this.PotentialColumn.Width = 50;
-            // 
-            // PotentialDiffColumn
-            // 
-            this.PotentialDiffColumn.DataPropertyName = "Diff.Potential";
-            this.PotentialDiffColumn.HeaderText = "";
-            this.PotentialDiffColumn.Name = "PotentialDiffColumn";
-            this.PotentialDiffColumn.ReadOnly = true;
-            this.PotentialDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PotentialDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // JumpShotColumn
-            // 
-            this.JumpShotColumn.DataPropertyName = "Skills.JumpShot";
-            this.JumpShotColumn.HeaderText = "JumpShot";
-            this.JumpShotColumn.Name = "JumpShotColumn";
-            this.JumpShotColumn.ReadOnly = true;
-            this.JumpShotColumn.Width = 50;
-            // 
-            // JumpShotDiffColumn
-            // 
-            this.JumpShotDiffColumn.DataPropertyName = "Diff.JumpShot";
-
-            this.JumpShotDiffColumn.HeaderText = "";
-            this.JumpShotDiffColumn.Name = "JumpShotDiffColumn";
-            this.JumpShotDiffColumn.ReadOnly = true;
-            this.JumpShotDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.JumpShotDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // RangeColumn
-            // 
-            this.RangeColumn.DataPropertyName = "Skills.Range";
-            this.RangeColumn.HeaderText = "Range";
-            this.RangeColumn.Name = "RangeColumn";
-            this.RangeColumn.ReadOnly = true;
-            this.RangeColumn.Width = 50;
-            // 
-            // RangeDiffColumn
-            // 
-            this.RangeDiffColumn.DataPropertyName = "Diff.Range";
-            
-            this.RangeDiffColumn.HeaderText = "";
-            this.RangeDiffColumn.Name = "RangeDiffColumn";
-            this.RangeDiffColumn.ReadOnly = true;
-            this.RangeDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.RangeDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // OutsideDefenseColumn
-            // 
-            this.OutsideDefenseColumn.DataPropertyName = "Skills.OutsideDefense";
-            this.OutsideDefenseColumn.HeaderText = "OutsideDefense";
-            this.OutsideDefenseColumn.Name = "OutsideDefenseColumn";
-            this.OutsideDefenseColumn.ReadOnly = true;
-            this.OutsideDefenseColumn.Width = 50;
-            // 
-            // OutsideDefenseDiffColumn
-            // 
-            this.OutsideDefenseDiffColumn.DataPropertyName = "Diff.OutsideDefense";
-            
-            this.OutsideDefenseDiffColumn.HeaderText = "";
-            this.OutsideDefenseDiffColumn.Name = "OutsideDefenseDiffColumn";
-            this.OutsideDefenseDiffColumn.ReadOnly = true;
-            this.OutsideDefenseDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OutsideDefenseDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // HandlingColumn
-            // 
-            this.HandlingColumn.DataPropertyName = "Skills.Handling";
-            this.HandlingColumn.HeaderText = "Handling";
-            this.HandlingColumn.Name = "HandlingColumn";
-            this.HandlingColumn.ReadOnly = true;
-            this.HandlingColumn.Width = 50;
-            // 
-            // HandlingDiffColumn
-            // 
-            this.HandlingDiffColumn.DataPropertyName = "Diff.Handling";
-            
-            this.HandlingDiffColumn.HeaderText = "";
-            this.HandlingDiffColumn.Name = "HandlingDiffColumn";
-            this.HandlingDiffColumn.ReadOnly = true;
-            this.HandlingDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.HandlingDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // DrivingColumn
-            // 
-            this.DrivingColumn.DataPropertyName = "Skills.Driving";
-            this.DrivingColumn.HeaderText = "Driving";
-            this.DrivingColumn.Name = "DrivingColumn";
-            this.DrivingColumn.ReadOnly = true;
-            this.DrivingColumn.Width = 50;
-            // 
-            // DrivingDiffColumn
-            // 
-            this.DrivingDiffColumn.DataPropertyName = "Diff.Driving";
-            
-            this.DrivingDiffColumn.HeaderText = "DrivingDiff";
-            this.DrivingDiffColumn.Name = "DrivingDiffColumn";
-            this.DrivingDiffColumn.ReadOnly = true;
-            this.DrivingDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DrivingDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // PassingColumn
-            // 
-            this.PassingColumn.DataPropertyName = "Skills.Passing";
-            this.PassingColumn.HeaderText = "Passing";
-            this.PassingColumn.Name = "PassingColumn";
-            this.PassingColumn.ReadOnly = true;
-            this.PassingColumn.Width = 50;
-            // 
-            // PassingDiffColumn
-            // 
-            this.PassingDiffColumn.DataPropertyName = "Diff.Passing";
-            
-            this.PassingDiffColumn.HeaderText = "";
-            this.PassingDiffColumn.Name = "PassingDiffColumn";
-            this.PassingDiffColumn.ReadOnly = true;
-            this.PassingDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PassingDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // InsideShotColumn
-            // 
-            this.InsideShotColumn.DataPropertyName = "Skills.InsideShot";
-            this.InsideShotColumn.HeaderText = "InsideShot";
-            this.InsideShotColumn.Name = "InsideShotColumn";
-            this.InsideShotColumn.ReadOnly = true;
-            this.InsideShotColumn.Width = 50;
-            // 
-            // InsideShotDiffColumn
-            // 
-            this.InsideShotDiffColumn.DataPropertyName = "Diff.InsideShot";
-            
-            this.InsideShotDiffColumn.HeaderText = "";
-            this.InsideShotDiffColumn.Name = "InsideShotDiffColumn";
-            this.InsideShotDiffColumn.ReadOnly = true;
-            this.InsideShotDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.InsideShotDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // InsideDefenseColumn
-            // 
-            this.InsideDefenseColumn.DataPropertyName = "Skills.InsideDefense";
-            this.InsideDefenseColumn.HeaderText = "InsideDefense";
-            this.InsideDefenseColumn.Name = "InsideDefenseColumn";
-            this.InsideDefenseColumn.ReadOnly = true;
-            this.InsideDefenseColumn.Width = 50;
-            // 
-            // InsideDefenseDiffColumn
-            // 
-            this.InsideDefenseDiffColumn.DataPropertyName = "Diff.InsideDefense";
-            
-            this.InsideDefenseDiffColumn.HeaderText = "";
-            this.InsideDefenseDiffColumn.Name = "InsideDefenseDiffColumn";
-            this.InsideDefenseDiffColumn.ReadOnly = true;
-            this.InsideDefenseDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.InsideDefenseDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // ReboundColumn
-            // 
-            this.ReboundColumn.DataPropertyName = "Skills.Rebound";
-            this.ReboundColumn.HeaderText = "Rebound";
-            this.ReboundColumn.Name = "ReboundColumn";
-            this.ReboundColumn.ReadOnly = true;
-            this.ReboundColumn.Width = 50;
-            // 
-            // ReboundDiffColumn
-            // 
-            this.ReboundDiffColumn.DataPropertyName = "Diff.Rebound";
-            
-            this.ReboundDiffColumn.HeaderText = "";
-            this.ReboundDiffColumn.Name = "ReboundDiffColumn";
-            this.ReboundDiffColumn.ReadOnly = true;
-            this.ReboundDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReboundDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // BlockColumn
-            // 
-            this.BlockColumn.DataPropertyName = "Skills.Block";
-            this.BlockColumn.HeaderText = "Block";
-            this.BlockColumn.Name = "BlockColumn";
-            this.BlockColumn.ReadOnly = true;
-            this.BlockColumn.Width = 50;
-            // 
-            // BlockDiffColumn
-            // 
-            this.BlockDiffColumn.DataPropertyName = "Diff.Block";
-            
-            this.BlockDiffColumn.HeaderText = "";
-            this.BlockDiffColumn.Name = "BlockDiffColumn";
-            this.BlockDiffColumn.ReadOnly = true;
-            this.BlockDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.BlockDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // StaminaColumn
-            // 
-            this.StaminaColumn.DataPropertyName = "Skills.Stamina";
-            this.StaminaColumn.HeaderText = "Stamina";
-            this.StaminaColumn.Name = "StaminaColumn";
-            this.StaminaColumn.ReadOnly = true;
-            this.StaminaColumn.Width = 50;
-            // 
-            // StaminaDiffColumn
-            // 
-            this.StaminaDiffColumn.DataPropertyName = "Diff.Stamina";
-            
-            this.StaminaDiffColumn.HeaderText = "";
-            this.StaminaDiffColumn.Name = "StaminaDiffColumn";
-            this.StaminaDiffColumn.ReadOnly = true;
-            this.StaminaDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.StaminaDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // FreeThrowColumn
-            // 
-            this.FreeThrowColumn.DataPropertyName = "Skills.FreeThrow";
-            this.FreeThrowColumn.HeaderText = "FreeThrow";
-            this.FreeThrowColumn.Name = "FreeThrowColumn";
-            this.FreeThrowColumn.ReadOnly = true;
-            this.FreeThrowColumn.Width = 50;
-            // 
-            // FreeThrowDiffColumn
-            // 
-            this.FreeThrowDiffColumn.DataPropertyName = "Diff.FreeThrow";
-            
-            this.FreeThrowDiffColumn.HeaderText = "";
-            this.FreeThrowDiffColumn.Name = "FreeThrowDiffColumn";
-            this.FreeThrowDiffColumn.ReadOnly = true;
-            this.FreeThrowDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.FreeThrowDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // ExperienceColumn
-            // 
-            this.ExperienceColumn.DataPropertyName = "Skills.Experience";
-            this.ExperienceColumn.HeaderText = "Experience";
-            this.ExperienceColumn.Name = "ExperienceColumn";
-            this.ExperienceColumn.ReadOnly = true;
-            this.ExperienceColumn.Width = 50;
-            // 
-            // ExperienceDiffColumn
-            // 
-            this.ExperienceDiffColumn.DataPropertyName = "Diff.Experience";
-            
-            this.ExperienceDiffColumn.HeaderText = "";
-            this.ExperienceDiffColumn.Name = "ExperienceDiffColumn";
-            this.ExperienceDiffColumn.ReadOnly = true;
-            this.ExperienceDiffColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ExperienceDiffColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // RosterPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -906,6 +1070,21 @@
         private BBWin.UI.DiffColumn FreeThrowDiffColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExperienceColumn;
         private BBWin.UI.DiffColumn ExperienceDiffColumn;
+        private BBWin.UI.DiffColumn diffColumn1;
+        private BBWin.UI.DiffColumn diffColumn2;
+        private BBWin.UI.DiffColumn diffColumn3;
+        private BBWin.UI.DiffColumn diffColumn4;
+        private BBWin.UI.DiffColumn diffColumn5;
+        private BBWin.UI.DiffColumn diffColumn6;
+        private BBWin.UI.DiffColumn diffColumn7;
+        private BBWin.UI.DiffColumn diffColumn8;
+        private BBWin.UI.DiffColumn diffColumn9;
+        private BBWin.UI.DiffColumn diffColumn10;
+        private BBWin.UI.DiffColumn diffColumn11;
+        private BBWin.UI.DiffColumn diffColumn12;
+        private BBWin.UI.DiffColumn diffColumn13;
+        private BBWin.UI.DiffColumn diffColumn14;
+        private BBWin.UI.DiffColumn diffColumn15;
 
     }
 }

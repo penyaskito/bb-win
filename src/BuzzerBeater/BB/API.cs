@@ -343,7 +343,7 @@ namespace BB
                             Age = Convert.ToInt32(players.Element("age").Value),
                             Height = Convert.ToInt32(players.Element("height").Value),
                             DMI = Convert.ToInt32(players.Element("dmi").Value),
-                            Jersey = (players.Element("jersey") != null) ? ParseJersey(players.Element("jersey").Value) : null,
+                            Jersey = (players.Element("jersey") != null) ? new Jersey() { N = ParseJersey(players.Element("jersey").Value) } : null,
                             Salary = Convert.ToInt32(players.Element("salary").Value),
                             BestPosition = (Position)Enum.Parse(typeof(Position), players.Element("bestPosition").Value),
                             Skills = Skills.ParseXElement(players.Element("skills"))
@@ -381,7 +381,45 @@ namespace BB
                 return null;
             }
         }
+        public class Jersey : IComparable<Jersey>, IComparable
+        {
+            public string N { get; set; }
 
+            #region IComparable<Jersey> Members
+
+            public int CompareTo(Jersey other)
+            {
+                if (string.IsNullOrEmpty(N) == null && string.IsNullOrEmpty(other.N))
+                {
+                    return 0;
+                }
+                if (string.IsNullOrEmpty(N) && !string.IsNullOrEmpty(other.N))
+                {
+                    return 1;
+                }
+                if (!string.IsNullOrEmpty(N) && string.IsNullOrEmpty(other.N))
+                {
+                    return -1;
+                }
+                return Convert.ToInt32(N).CompareTo(Convert.ToInt32(other.N));
+            }
+
+            #endregion
+
+            public override string ToString()
+            {
+                return N;
+            }
+
+            #region IComparable Members
+
+            public int CompareTo(object other)
+            {
+                return CompareTo((Jersey)other);
+            }
+
+            #endregion
+        }
         public class Player
         {
             public int ID { get; set; }
@@ -393,7 +431,7 @@ namespace BB
             public int Height { get; set; }
             public int DMI { get; set; }
 
-            public string Jersey { get; set; }
+            public Jersey Jersey { get; set; }
             public int Salary { get; set; }
 
             public Position BestPosition { get; set; }
