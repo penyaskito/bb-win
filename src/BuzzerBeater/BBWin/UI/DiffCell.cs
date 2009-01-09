@@ -53,8 +53,8 @@ namespace BBWin.UI
             }
             else if (diff < 0)
             {
-                result = string.Format("-{0}", diff);
-                cellStyle.BackColor = Color.Red;
+                result = string.Format("{0}", diff);
+                cellStyle.BackColor = Color.PaleVioletRed;
             }
             return result;
         }
