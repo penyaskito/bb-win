@@ -42,62 +42,21 @@ namespace BBWin.UI
             TypeConverter valueTypeConverter,
             TypeConverter formattedValueTypeConverter, DataGridViewDataErrorContexts context)
         {
-            //Image resource = null;
-            //DiffImage status = DiffImage.Equal;
-            //// Try to get the default value from the containing column
-            //DiffColumn owningCol = OwningColumn as DiffColumn;
-            //if (owningCol != null)
-            //{
-            //    status = owningCol.DefaultStatus;
-            //}
-            //if (value is DiffImage || value is int)
-            //{
-            //    status = (DiffImage)value;
-            //}
-            //switch (status)
-            //{
-            //    case DiffImage.More:
-            //        resource = BBWin.Properties.Resources.more;
-            //        break;
-            //    case DiffImage.Equal:
-            //        resource = BBWin.Properties.Resources.equal;
-            //        break;
-            //    case DiffImage.Less:
-            //        resource = BBWin.Properties.Resources.less;
-            //        break;
-            //    default:
-            //        break;
-            //}
-            //cellStyle.Alignment =
-            //   DataGridViewContentAlignment.TopCenter;
-            //return resource;
-
-            /*
-            DiffColumn owningCol = OwningColumn as DiffColumn;
-            String result = string.Empty;
-
-            int valor = 0;
-            if (value !=null && value is int)
+            object baseFormattedValue = base.GetFormattedValue(value, rowIndex, ref cellStyle,
+                valueTypeConverter, formattedValueTypeConverter, context);
+            int diff = Convert.ToInt32(baseFormattedValue);
+            string result = "=";
+            if (diff > 0)
             {
-                valor = (int)value;
+                result = string.Format("+{0}", diff);
+                cellStyle.BackColor = Color.GreenYellow;
             }
-            if (valor == 0)
+            else if (diff < 0)
             {
-                result = "=";
-            }
-            else if (valor > 0)
-            {
-                result = string.Format("+{0}", valor);
-            }
-            else if (valor < 0)
-            {
-                result = string.Format("-{0}", valor);
+                result = string.Format("-{0}", diff);
+                cellStyle.BackColor = Color.Red;
             }
             return result;
-             */
-            return base.GetFormattedValue(value, rowIndex, ref cellStyle,
-             valueTypeConverter,
-             formattedValueTypeConverter, context);
         }
     }
 }
