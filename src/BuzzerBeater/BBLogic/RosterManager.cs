@@ -91,7 +91,8 @@ namespace BBLogic
 
             for (int i = 0; i < roster.Players.Count && !isNewer; i++)
             {
-                if (!roster.Players[i].Equals(older.Players[i]))
+                BB.API.Player p = roster.Players[i];
+                if (!p.Equals(roster.getPlayer(p.ID)))
                 {
                     isNewer = true;
                 }
@@ -141,7 +142,8 @@ namespace BBLogic
                 List<PlayerDiff> playerdiff = new List<PlayerDiff>();
                 for (int i = 0; i < roster.Players.Count; i++)
                 {
-                    PlayerDiff diff = new PlayerDiff(roster.Players[i], old.Players[i]);
+                    BB.API.Player newP = roster.Players[i];
+                    PlayerDiff diff = new PlayerDiff(newP, old.getPlayer(newP.ID));
                     playerdiff.Add(diff);
                 }
                 return playerdiff;

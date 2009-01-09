@@ -368,6 +368,18 @@ namespace BB
                 }
                 return number;
             }
+
+            public Player getPlayer(int playerId)
+            {
+                foreach (var p in Players)
+                {
+                    if (p.ID == playerId)
+                    {
+                        return p;
+                    }
+                }
+                return null;
+            }
         }
 
         public class Player
