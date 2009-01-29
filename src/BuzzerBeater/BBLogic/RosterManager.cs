@@ -167,7 +167,14 @@ namespace BBLogic
                 this.Salary = p.Salary;
                 this.Skills = p.Skills;
 
-                this.Diff = GetDiff(p.Skills, old.Skills);
+                if (old != null)
+                {
+                    this.Diff = GetDiff(p.Skills, old.Skills);
+                }
+                else
+                {
+                    this.Diff = new API.Skills();
+                }
             }
 
             private API.Skills GetDiff(BB.API.Skills newSkills, BB.API.Skills oldSkills)
