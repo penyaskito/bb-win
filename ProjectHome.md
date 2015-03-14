@@ -1,0 +1,2 @@
+![http://bb-win.googlecode.com/svn/trunk/src/BuzzerBeater/BBWin/images/number_ball.png](http://bb-win.googlecode.com/svn/trunk/src/BuzzerBeater/BBWin/images/number_ball.png)
+BBWin: An application that helps you to win in [BuzzerBeater.org](http://BuzzerBeater.org)
